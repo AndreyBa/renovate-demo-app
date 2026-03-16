@@ -6,7 +6,10 @@
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
-      "groupName": "dev dependencies"
+      "matchUpdateTypes": ["patch"],
+      "groupName": "dev dependencies (patch)",
+      "automerge": true,
+      "automergeType": "pr"
     },
     {
       "matchPackageNames": ["axios"],
